@@ -1,0 +1,321 @@
+body {
+    font-family: 'Montserrat', Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #e0f7fa; /* Hintergrundfarbe in hellem Türkis */
+}
+
+header {
+    position: fixed; /* Fixiert den Header am oberen Rand */
+    top: 0; /* Positioniert den Header ganz oben */
+    width: 100%; /* Stellt sicher, dass der Header die volle Breite einnimmt */
+    z-index: 1000; /* Stellt sicher, dass der Header über anderen Elementen liegt */
+}
+
+header, footer {
+    color: white;
+    padding: 1em 0;
+    background-image: linear-gradient(to right, #98fb98, #00ced1); /* Farbübergang von hellem Grün zu Türkis */
+}
+
+header nav ul, footer nav ul {
+    list-style: none;
+    text-align: center;
+}
+
+header nav ul li, footer nav ul li {
+    display: inline;
+    margin: 0 15px;
+}
+
+header nav ul li a, footer nav ul li a {
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+section {
+    padding: 2em;
+    text-align: center;
+}
+
+section#home h1 {
+    padding-top: 110px; /* Erhöhter Abstand zur Navbar */
+    margin-bottom: 30px; /* Erhöhter Abstand zum darunterliegenden Text */
+}
+
+section#home p {
+    margin-top: 3rem;
+    margin-bottom: 20px; /* Abstand zwischen dem Text und den CTA-Buttons */
+    padding: 0 30px; /* Abstand zu den Seitenwänden, zentriert den Text */
+    font-size: 18px;
+}
+
+.cta-buttons {
+    text-align: center;
+    margin-top: 11rem;
+    margin-bottom: 4rem;
+}
+
+.cta-btn {
+    display: inline-block;
+    margin: 0 10px;
+    padding: 10px 20px;
+    color: white;
+    background-color: #00ced1; /* Türkisfarbener Hintergrund */
+    border: none;
+    border-radius: 5px;
+    text-decoration: none;
+    font-size: 16px;
+    font-weight: bold;
+    transition: background-color 0.3s ease;
+}
+
+.cta-btn:hover {
+    background-color: #00b2b2; /* Dunkleres Türkis beim Hover */
+}
+
+.backgroundRev{
+  background-color: white;
+  border-radius: 11px;
+}
+
+
+.image-gallery01 {
+    display: flex;
+    justify-content: center;
+    margin-top: 20px; /* Abstand nach den CTA-Buttons */
+}
+
+.image-gallery01 img {
+    width: 20%; /* Stellt die Breite jedes Bildes ein */
+    margin: 0 10px; /* Abstand zwischen den Bildern */
+    border-radius: 10px; /* Optional für abgerundete Ecken */
+    margin-top: 3rem;
+    margin-bottom: 4rem;
+    transition: transform 0.3s ease; /* Weicher Übergang für den Hover-Effekt */
+}
+
+.image-gallery01 img:hover {
+    transform: scale(1.1); /* Vergrößert das Bild beim Hover */
+}
+
+
+.image-gallery {
+
+    display: flex;
+    justify-content: center;
+    margin-top: 20px; /* Abstand nach den CTA-Buttons */
+}
+
+
+.image-gallery img {
+    width: 5%; /* Stellt die Breite jedes Bildes ein */
+    margin: 0 10px; /* Abstand zwischen den Bildern */
+    border-radius: 10px; /* Optional für abgerundete Ecken */
+    margin-top: 3rem;
+    margin-bottom: 4rem;
+}
+
+.colored-hr {
+    border: none;
+    height: 3px;
+    background-image: linear-gradient(to right, #98fb98, #00ced1); /* Farbübergang */
+    margin: 20px 0; /* Abstand über und unter der Linie */
+}
+
+.services {
+     /* Neue Hintergrundfarbe für den Dienstleistungsbereich */
+    display: flex;
+    justify-content: space-around;
+    padding: 20px;
+    margin: 20px 0; /* Abstand zum nächsten Element */
+}
+
+.service-box {
+    width: 30%;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+    text-align: center;
+    border-radius: 10px;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.service-box:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 6px 15px rgba(0, 0, 0, 0.15);
+}
+
+.price-advantage {
+    text-align: center;
+    padding: 20px;
+}
+
+.price-advantage p {
+    font-size: 18px;
+    margin-bottom: 20px;
+}
+
+.map-impressum-container {
+    display: flex;
+    justify-content: space-between;
+    padding: 20px;
+    margin-top: 20px;
+}
+
+.google-map, .impressum {
+    flex-basis: 48%; /* Teilt den Raum zwischen Map und Impressum */
+}
+
+.google-map iframe {
+    width: 100%; /* Stellt sicher, dass die Karte die volle Breite einnimmt */
+    height: 300px; /* Höhe der Karte */
+    border-radius: 10px; /* Optional für abgerundete Ecken */
+}
+
+.impressum {
+    background-color: white; /* Hintergrundfarbe für das Impressum */
+    padding: 20px;
+    border-radius: 10px; /* Abgerundete Ecken */
+    text-align: center; /* Zentriert den Text im Impressum */
+}
+
+footer {
+    color: white;
+    background-color: #00695c; /* Hält die ursprüngliche Farbe bei */
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 1em;
+}
+
+.footer-left {
+    /* Platz für Logo-Styling */
+}
+
+.footer-right {
+    display: flex;
+    justify-content: flex-end;
+}
+
+.footer-section {
+    margin-left: 20px; /* Fügt Abstand zwischen den Sektionen hinzu */
+    padding: 10px;
+}
+
+.footer-section h3 {
+    margin-bottom: 10px;
+}
+
+.footer-section ul {
+    list-style: none;
+    padding: 0;
+}
+
+.footer-section ul li a {
+    color: white;
+    text-decoration: none;
+    transition: color 0.3s ease;
+}
+
+.footer-section ul li a:hover {
+    color: #98fb98; /* Hervorhebung beim Hover */
+}
+
+.footer-bottom {
+    text-align: center;
+    margin-top: 20px;
+}
+
+
+/* Grundlegende Stile, die bereits vorhanden sind ... */
+
+/* Media Query für Tablets */
+@media (max-width: 768px) {
+    header nav ul {
+        flex-direction: column;
+        text-align: left;
+    }
+
+    .service-box {
+        width: 100%; /* Jede Box nimmt die volle Breite ein */
+        margin-bottom: 20px; /* Abstand zwischen den Dienstleistungsboxen */
+    }
+
+    .image-gallery01 img, .image-gallery img {
+        width: 40%; /* Vergrößert die Bilder für kleinere Bildschirme */
+    }
+
+    .map-impressum-container, .footer-right {
+        flex-direction: column;
+    }
+
+    .google-map, .impressum {
+        width: 100%;
+        margin-bottom: 20px;
+    }
+
+    .cta-buttons {
+        flex-direction: column;
+    }
+
+    .cta-btn {
+        margin-bottom: 10px; /* Abstand zwischen den CTA-Buttons */
+    }
+}
+
+/* Media Query für Smartphones */
+/* Grundlegende Stile, die bereits vorhanden sind ... */
+
+/* Media Query für Smartphones */
+@media (max-width: 480px) {
+    header nav ul {
+        flex-direction: column;
+        align-items: center; /* Zentriert die Navigationselemente */
+    }
+
+    header nav ul li {
+        display: block;
+        text-align: center; /* Zentriert die Nav-Links */
+        margin: 10px 0; /* Vertikaler Abstand für Nav-Elemente */
+    }
+
+    .services, .image-gallery01, .image-gallery {
+        flex-direction: column; /* Stapelt die Elemente vertikal */
+        align-items: center; /* Zentriert die Elemente horizontal */
+    }
+
+    .service-box, .image-gallery01 img, .image-gallery img {
+        width: 100%; /* Stellt sicher, dass jedes Element die volle Breite einnimmt */
+        margin-bottom: 20px; /* Abstand zwischen den Elementen */
+    }
+
+    .cta-buttons {
+        flex-direction: column;
+        align-items: center; /* Zentriert die CTA-Buttons */
+    }
+
+    .cta-btn {
+        width: 90%; /* Breite der Buttons anpassen */
+        margin-bottom: 10px; /* Abstand zwischen den CTA-Buttons */
+    }
+
+    section#home h1 {
+        padding-top: 60px; /* Reduzierter Abstand zur fixierten Navbar */
+        font-size: 1.5em; /* Kleinere Schriftgröße für die Überschrift */
+    }
+
+    .map-impressum-container, .footer-right {
+        flex-direction: column;
+        align-items: center; /* Zentriert den Inhalt des Containers */
+    }
+
+    .google-map, .impressum {
+        width: 100%;
+        margin-bottom: 20px;
+    }
+
+    .impressum {
+        text-align: center; /* Zentriert den Text im Impressum */
+    }
+}
